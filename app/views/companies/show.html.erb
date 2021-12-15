@@ -1,2 +1,10 @@
-<h1>Companies#show</h1>
-<p>Find me in app/views/companies/show.html.erb</p>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1462206092226-f46025ffe607?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y29tcGFueXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60);">
+  <div class="container">
+    <h1><%= @company.name %></strong></h1>
+    <p><%= @company.description %></p>
+    <p><%= @company.address %></p>
+    <p><%= @company.phone %></p>
+    <a class="btn btn-flat" href="#">Apply now</a>
+  </div>
+</div>
+
