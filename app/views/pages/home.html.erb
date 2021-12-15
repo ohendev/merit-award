@@ -1,6 +1,12 @@
-<% if user_signed_in? %>
- <h1>Bienvenue <%= current_user.username %></h1>
-<% else %>
- <h1>Bienvenue ici</h1>
-<% end %>
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+  <div class="container">
+    <% if user_signed_in? %>
+    <h1>Bienvenue <%= current_user.username %></h1>
+    <% else %>
+    <h1>Bienvenue étranger</h1>
+    <% end %>
+    <p>Merit Award répertorie les entreprises et les classe selon leurs conditions de travail.</p>
+  </div>
+</div>
 
