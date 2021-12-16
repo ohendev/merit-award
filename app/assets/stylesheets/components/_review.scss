@@ -1,0 +1,42 @@
+.review-container {
+  width: 1100px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 5px;
+}
+
+.review {
+  border: 2px solid $merit-green;
+  border-radius: 5px;
+  background-color: ghostwhite;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2px 0 2px;
+}
+
+.review-stars {
+  color: $merit-green;
+  width: 12%;
+}
+
+.review-body {
+  font-size: 20px;
+  width: 65%;
+  padding: 5px 5px 5px 25px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.review-delete {
+  width: 15%;
+  background-color: firebrick;
+  color: whitesmoke;
+  padding: 5px 15px;
+  border-radius: 5px;
+  &:hover {
+    background-color: red;
+    color: white;
+  }
+}

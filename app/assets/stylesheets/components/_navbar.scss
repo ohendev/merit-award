@@ -11,12 +11,9 @@
   width: 50px;
 }
 
-div p{
-
-color: rgb(131, 192, 65);
-/*background-color:rgb(131, 192, 65);
-border-radius: 5px;*/
-padding: 10px;
+div p {
+  color: $merit-green;
+  padding: 10px;
 }
 
 .navbar-lewagon .navbar-collapse {
