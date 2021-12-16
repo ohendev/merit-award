@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Company.destroy_all
 
-Company.create(name: "La Banque Postale", activity: "financiere",  description:"société de financement banquaire", address:"40 rue des bois 97200 Fort de France", phone: "0596757575")
-Company.create(name: "Lockout ", activity: "informatique", description:"société de formation en informatique", address: "50 avenue des champs 97200 Fort de France", phone: "0596908372")
-Company.create(name: "Cdiscount", activity: "vente", description:"société de vente a distance", address: "100 bld charles de Gaulle 97200 Fort de France", phone: "0596363635")
-Company.create(name: "Amazon", activity: "vente", description:"société de vente a distance",address: "01 rue de la riviere 97200 Fort de France", phone: "0596010203")
+Company.create(name: "La banque postale", activity: "financiere",  descrtiption:"société de financement banquaire", adresse:"40 rue des bois 97200 Fort de France", telephone: "0596757575")
+Company.create(name: "lockout ", activity: "informatique", descrtiption:"société de formation en informatique", adresse: "50 avenue des champs 97200 Fort de France", telephone: "0596908372")
+Company.create(name: "cdsicount", activity: "vente", descrtiption:"société de vente a distance", adresse: "100 bld charles de Gaulle 97200 Fort de France", telephone: "0596363635")
+Company.create(name: "amazon", activity: "vente", descrtiption:"société de vente a distance",adresse: "01 rue de la riviere 97200 Fort de France", telephone: "0596010203")
