@@ -4,6 +4,7 @@
     <p><%= @company.description %></p>
     <p><%= @company.address %></p>
     <p><%= @company.phone %></p>
+    <%= link_to 'add a review', new_company_review_path(params[:id]), class: "btn btn-success" %>
   </div>
 </div>
 
