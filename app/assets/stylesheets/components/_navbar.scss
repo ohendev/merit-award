@@ -1,6 +1,7 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
+  display: flex;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -8,10 +9,9 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 40px;
+  width: 50px;
 }
-
-.merit {
+.navbar p{
   color: white;
   background-color:rgb(113, 184, 113);
   padding: 5px 15px;
