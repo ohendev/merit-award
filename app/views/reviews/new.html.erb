@@ -4,13 +4,8 @@
     <p><%= @company.description %></p>
     <p><%= @company.address %></p>
     <p><%= @company.phone %></p>
-    <%= link_to 'add a review', new_company_review_path(params[:id]), class: "btn btn-success" %>
   </div>
 </div>
 <div class="container">
-  <ul>
-    <% @company.reviews.each do |review| %>
-      <li><%= review.topic %> - <%= review.comment %> - <%= link_to 'delete', review_path(review.id), method: :delete %></li>
-    <% end %>
-  </ul>
+  <%= render 'form', company: @company, review: @review %>
 </div>
