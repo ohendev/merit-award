@@ -1,24 +1,24 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1462206092226-f46025ffe607?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y29tcGFueXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60);">
   <div class="container">
-    <h1><%= @company.name %></strong></h1>
+    <h1><%= @company.name %></h1>
     <p class="company-star">
       <% @stars.times do %>
         <i class="fas fa-star"></i>
       <% end %>
     </p>
-    <p><%= @company.description %></p>
-    <p><%= @company.address %></p>
-    <p><%= @company.phone %></p>
-    <%= link_to 'add a review', new_company_review_path(params[:id]), class: "btn btn-success" %>
+    <p class="contact"><%= @company.description %> <br>
+    <%= @company.address %> <br><br>
+     Tél: <%= @company.phone %></p>
+    <%= link_to 'add a review', new_company_review_path(params[:id]), class: "btn btn-success bold" %>
   </div>
 </div>
 <div class="container px-0">
   <% if @company.reviews.size.positive? %>
-    <h2 class="text-center">Les avis sur <%= @company.name %> :</h2>
+    <h2 class="text-center" style= "margin:20px;" > <strong>Les avis sur <%= @company.name %> :</strong></h2>
   <% end %>
   <% @company.reviews.each do |review| %>
-    <div class="review">
-    <div class="review-stars">
+    <div class="review"style="margin:10px;">
+    <div class="review-stars"style="text-align:center">
       <% (review.stars).times do %>
         <i class="fas fa-star"></i>
       <% end %>
