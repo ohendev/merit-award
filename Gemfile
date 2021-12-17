@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+
+gem 'geocoder'
+
 ruby '2.7.4'
 # gem for devise creation
 gem 'devise'
