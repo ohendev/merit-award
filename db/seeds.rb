@@ -11,8 +11,8 @@ User.destroy_all
 
 
 bp = Company.create(name: "La Banque Postale", activity: "Finance",  description:"Société de financement banquaire", address:"40 rue Simon Bolivar, 97200 Fort-de-France, Martinique", phone: "0596757575", image_url: "banque-postale.jpg")
-lock = Company.create(name: "Lockout ", activity: "Informatique", description:"Société de formation en informatique", address: "50 rue Tannerie, 97200 Fort-de-France", phone: "0596908372", image_url: "lockout.jpg")
-cd = Company.create(name: "Cdiscount", activity: "Vente", description:"Société de vente à prix cassés", address: "114 Boulevard Pasteur, 97200 Fort de France", phone: "0596363635", image_url: "cdiscount.jpg")
+lock = Company.create(name: "Lockout ", activity: "Informatique", description:"Société de formation en informatique", address: "50 rue Tannerie, 97200 Fort-de-France, Martinique", phone: "0596908372", image_url: "lockout.jpg")
+cd = Company.create(name: "Cdiscount", activity: "Vente", description:"Société de vente à prix cassés", address: "114 Boulevard Pasteur, 97200 Fort-de-France, Martinique", phone: "0596363635", image_url: "cdiscount.jpg")
 ama = Company.create(name: "Amazon", activity: "Vente", description:"Société de vente a distance",address: "1 Zone Indutsrielle La Lézarde, 97232 Le Lamentin, Martinique", phone: "0596010203", image_url: "amazon.jpg")
 edf = Company.create(name: "EDF", activity: "Energies", description:"Fournisseur d'énergies",address: "Avenue Victor Lamon, 97200 Fort-de-France, Martinique", phone: "05962424234", image_url: "edf.jpg")
 se = Company.create(name: "Snack Elizé", activity: "Restauration", description:"Restaurant de Burgers Antillais",address: "Route de Balata, 97200 Fort-de-France, Martinique", phone: "0596123456", image_url: "snack.jpg")
