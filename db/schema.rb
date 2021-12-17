@@ -28,13 +28,6 @@ ActiveRecord::Schema.define(version: 2021_12_17_153847) do
     t.float "longitude"
   end
 
-  create_table "flats", force: :cascade do |t|
-    t.string "name"
-    t.string "address"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "reviews", force: :cascade do |t|
     t.string "topic"
     t.string "comment"

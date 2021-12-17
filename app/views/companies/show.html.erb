@@ -26,7 +26,11 @@
     <div class="review-body">
     <%= review.topic %> : <%= review.comment %>
     </div>
-    <%= link_to 'supprimer', review_path(review.id), method: :delete, class: "btn review-delete" %>
+    <% if review.user == current_user %>
+      <%= link_to 'supprimer', review_path(review.id), method: :delete, class: "btn review-delete" %>
+    <% else %>
+      <div class="empty"></div>
+    <% end %>
     </div>
   <% end %>
 </div>
