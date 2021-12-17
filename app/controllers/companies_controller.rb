@@ -2,11 +2,12 @@ class CompaniesController < ApplicationController
   def index
     @companies = Company.all.sort { |a,b| company_stars(b) <=> company_stars(a) }
 
-    @markers = Company.all.geocoded.map do |company|
+    @markers = Company.geocoded.map do |company|
       {
         lat: company.latitude,
         lng: company.longitude,
-        info_window: render_to_string(partial: "info_window", locals: { company: company })
+        info_window: render_to_string(partial: "info_window", locals: { company: company }),
+        image_url: helpers.asset_url('logo.png')
       }
     end
   end
