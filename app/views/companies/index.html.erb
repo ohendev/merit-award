@@ -1,7 +1,14 @@
 <div class="cards">
   <% @companies.each do |company| %>
+  <% if company.image_url %>
   <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%=image_path(company.image_url)%>)">
+    <% end %>
     <%= link_to company.name, company_path(company.id), class: 'card-link' %>
   </div>
   <% end %>
 </div>
+
+<div id="map"class="margin"
+     style="width: 97%; height: 300px;"
+     data-markers="<%= @markers.to_json %>"
+     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
