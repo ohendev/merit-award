@@ -3,6 +3,8 @@ class CompaniesController < ApplicationController
   def index
     @companies = Company.all.sort { |a, b| company_stars(b) <=> company_stars(a) }
 
+    @companies = policy_scope(Company).order(created_at: :desc)
+
     @markers = Company.geocoded.map do |company|
       {
         lat: company.latitude,
@@ -10,6 +12,7 @@ class CompaniesController < ApplicationController
         info_window: render_to_string(partial: "info_window", locals: { company: company }),
         image_url: helpers.asset_url('logo.png')
       }
+
     end
   end
 
