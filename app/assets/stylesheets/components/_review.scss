@@ -45,6 +45,7 @@ body{
     color: white;
   }
 }
+
 @media (min-width: 100px) and (max-width: 575px) {
   .review-container {
     width: 1100px;
@@ -256,4 +257,8 @@ body{
   .review-container{
   /*=>*/
   }
+}
+
+.empty {
+  width: 15%;
 }

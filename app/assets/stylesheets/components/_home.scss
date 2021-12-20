@@ -1,0 +1,16 @@
+.home-partners {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+}
+
+.h2-green {
+  color: $merit-green;
+  margin-bottom: 30px;
+}
