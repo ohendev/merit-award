@@ -1,3 +1,7 @@
+body{
+  background-color: rgb(255, 255, 255);
+}
+
 .review-container {
   width: 1100px;
   margin: 0 auto;
@@ -18,7 +22,8 @@
 
 .review-stars {
   color: $merit-green;
-  width: 12%;
+  width: 15%;
+  font-size-adjust: 10px;
 }
 
 .review-body {
@@ -38,6 +43,219 @@
   &:hover {
     background-color: red;
     color: white;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 575px) {
+  .review-container {
+    width: 1100px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 5px;
+  }
+
+
+    .review {
+      border: 2px solid $merit-green;
+      border-radius: 5px;
+      background-color: ghostwhite;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin: 2px 0 2px;
+    }
+
+    .review-stars {
+      color: $merit-green;
+      width: 15%;
+      font-size: 7px;
+      margin: 5px;
+    }
+
+    .review-body {
+
+      font-size: 12px;
+      width: 70%;
+      padding: 5px 10px 5px 15px;
+      border-radius: 5px;
+      background-color: white;
+    }
+
+    .review-delete {
+      margin:10px;
+      font-size: 12px;
+      width: 20%;
+      background-color: firebrick;
+      color: whitesmoke;
+      padding: 5px 10px;
+      border-radius: 5px;
+      &:hover {
+        background-color: red;
+        color: white;
+      }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+  .review-container {
+    width: 1100px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 5px;
+  }
+
+  .review {
+      border: 2px solid $merit-green;
+      border-radius: 5px;
+      background-color: ghostwhite;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin: 2px 0 2px;
+  }
+
+    .review-stars {
+      color: $merit-green;
+      width: 15%;
+      font-size: 8px;
+      margin: 5px;
+    }
+
+    .review-body {
+
+      font-size: 12px;
+      width: 70%;
+      padding: 5px 10px 5px 20px;
+      border-radius: 5px;
+      background-color: white;
+    }
+
+    .review-delete {
+      margin:10px;
+      font-size: 12px;
+      width: 20%;
+      background-color: firebrick;
+      color: whitesmoke;
+      padding: 5px 10px;
+      border-radius: 5px;
+      &:hover {
+        background-color: red;
+        color: white;
+      }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+   .review-container {
+    width: 1100px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 5px;
+  }
+
+  .review {
+      border: 2px solid $merit-green;
+      border-radius: 5px;
+      background-color: ghostwhite;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin: 2px 0 2px;
+  }
+
+    .review-stars {
+      color: $merit-green;
+      width: 15%;
+      font-size: 10px;
+      margin: 5px;
+    }
+
+    .review-body {
+
+      font-size: 16px;
+      width: 70%;
+      padding: 5px 10px 5px 20px;
+      border-radius: 5px;
+      background-color: white;
+    }
+
+    .review-delete {
+      margin:10px;
+      font-size: 16px;
+      width: 20%;
+      background-color: firebrick;
+      color: whitesmoke;
+      padding: 5px 10px;
+      border-radius: 5px;
+      &:hover {
+        background-color: red;
+        color: white;
+      }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+   .review-container {
+    width: 1100px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 5px;
+  }
+
+  .review {
+      border: 2px solid $merit-green;
+      border-radius: 5px;
+      background-color: ghostwhite;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin: 2px 0 2px;
+  }
+
+    .review-stars {
+      color: $merit-green;
+      width: 15%;
+      font-size: 15px;
+      margin: 5px;
+    }
+
+    .review-body {
+
+      font-size: 16px;
+      width: 70%;
+      padding: 5px 10px 5px 20px;
+      border-radius: 5px;
+      background-color: white;
+    }
+
+    .review-delete {
+      margin:10px;
+      font-size: 16px;
+      width: 20%;
+      background-color: firebrick;
+      color: whitesmoke;
+      padding: 5px 10px;
+      border-radius: 5px;
+      &:hover {
+        background-color: red;
+        color: white;
+      }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .review-container{
+  /*=>*/
   }
 }
 
