@@ -35,13 +35,3 @@
     </div>
   <% end %>
 </div>
-
-<% end %><% if policy(Company.create? %>
-  <%= link_to "New company", new_company_path %>
-<% end %>
-
-<% @companies.each do |company| %>
-  <% if policy(company).edit? %>
-    <%= link_to "Update", edit_company_path(company) %>
-  <% end %>
-<% end %>

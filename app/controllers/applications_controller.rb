@@ -1,6 +1,6 @@
 class ApplicationsController < ApplicationController
   before_action :find_company, only: [:new, :create]
-
+  skip_after_action :verify_authorized, :verify_policy_scoped
   def index
     @applications = Application.where(user: current_user)
   end

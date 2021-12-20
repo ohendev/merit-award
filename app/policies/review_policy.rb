@@ -1,4 +1,4 @@
-class CompanyPolicy < ApplicationPolicy
+class ReviewPolicy < ApplicationPolicy
   class Scope < Scope
     def resolve
       scope.all
@@ -9,7 +9,7 @@ class CompanyPolicy < ApplicationPolicy
     return true
   end
 
-  def show?
+  def new?
     return true
   end
 
