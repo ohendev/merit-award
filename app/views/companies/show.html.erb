@@ -9,7 +9,8 @@
     <p class="contact"><%= @company.description %> <br>
     <%= @company.address %> <br><br>
      Tél: <%= @company.phone %></p>
-    <%= link_to 'add a review', new_company_review_path(params[:id]), class: "btn btn-success bold" %>
+    <%= link_to 'Mettre un avis', new_company_review_path(params[:id]), class: "btn btn-success bold" %>
+    <%= link_to 'Postuler', new_company_application_path(params[:id]), class: "btn btn-success bold" %>
   </div>
 </div>
 <div class="container px-0">
