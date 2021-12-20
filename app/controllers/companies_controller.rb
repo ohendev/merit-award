@@ -1,6 +1,6 @@
 class CompaniesController < ApplicationController
   def index
-    @companies = Company.all.sort { |a,b| company_stars(b) <=> company_stars(a) }
+    @companies = Company.all.sort { |a, b| company_stars(b) <=> company_stars(a) }
 
     @markers = Company.geocoded.map do |company|
       {
@@ -12,13 +12,13 @@ class CompaniesController < ApplicationController
     end
   end
 
-
   def show
     @company = Company.find(params[:id])
     @stars = company_stars(@company)
   end
 
   private
+
   def company_stars(company)
     reviews = company.reviews.size
     sum = 0
