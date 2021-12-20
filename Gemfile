@@ -1,8 +1,10 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-
+# gem for geocoding our map
 gem 'geocoder'
+#gem for storing external resources
+gem 'cloudinary', '~> 1.16.0'
 
 ruby '2.7.4'
 # gem for devise creation

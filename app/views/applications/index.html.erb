@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Bonjour <%= current_user.username %>,</h1>
+  <h2>Voici la liste de vos candidatures spontanées :</h2>
+  <div class="application-container">
+    <% @applications.each do |application| %>
+       <div class="application">
+          <h2><%= application.company.name %></h2>
+          <h3><%= application.role %></h3>
+          <p>Postulé le : <%= application.created_at %></p>
+       </div>
+    <% end %>
+  </div>
+</div>
