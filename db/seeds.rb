@@ -6,8 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 Review.destroy_all
+Application.destroy_all
 Company.destroy_all
 User.destroy_all
+
 
 
 bp = Company.create(name: "La Banque Postale", activity: "Finance",  description:"Société de financement banquaire", address:"40 rue Simon Bolivar, 97200 Fort-de-France, Martinique", phone: "0596757575", image_url: "banque-postale.jpg")
