@@ -1,0 +1,27 @@
+.log{
+  font-weight: bold;
+  display: flex;
+  border-collapse:separate;
+  border-spacing: 15px;
+  justify-content: center;
+  margin-bottom: 20px;
+
+}
+
+ .form-inputs{
+ padding: 20px;
+ }
+
+h2{
+  margin:10px;
+  font-weight: bold;
+}
+
+ .form-actions{
+    background-color: #83C041;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+ }

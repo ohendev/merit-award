@@ -1,7 +1,7 @@
 class CompaniesController < ApplicationController
 
   def index
-    @companies = Company.all.sort { |a,b| company_stars(b) <=> company_stars(a) }
+    @companies = Company.all.sort { |a, b| company_stars(b) <=> company_stars(a) }
 
     @markers = Company.geocoded.map do |company|
       {
