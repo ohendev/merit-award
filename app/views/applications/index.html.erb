@@ -1,18 +1,27 @@
 <div class="container">
-  <h1>Bonjour <%= current_user.username %>,</h1>
-  <h2>Voici la liste de vos candidatures spontanées :</h2>
+  <div class="avatar-container">
+    <%= cl_image_tag(current_user.avatar.key, class: "avatar-image") %>
+    <div class="avatar-info">
+    <h1>Bonjour <%= current_user.username %> !</h1>
+    <h2>Voici la liste de vos candidatures spontanées :</h2>
+    </div>
+  </div>
   <div class="application-container">
-    <% @applications.each do |application| %>
-       <div class="application">
-          <h2><%= application.company.name %></h2>
-          <h3><%= application.role %></h3>
-          <div class="application-data">
-            <span>Postulé le : <%= application.created_at %></span>
-            <%= link_to cl_image_path(application.cv_attachment.key, format: :jpg ), target: "_blank" do %>
-              <i class="far fa-file-pdf"></i>
-            <% end %>
-          </div>
-       </div>
+    <% if @applications.size.positive? %>
+      <% @applications.each do |application| %>
+        <div class="application">
+            <h2><%= application.company.name %></h2>
+            <h3><%= application.role %></h3>
+            <div class="application-data">
+              <span>Postulé le : <%= application.created_at %></span>
+              <%= link_to cl_image_path(application.cv_attachment.key, format: :jpg ), target: "_blank" do %>
+                <i class="far fa-file-pdf"></i>
+              <% end %>
+            </div>
+        </div>
+      <% end %>
+    <% else %>
+      <p id="zero">Vous n'avez aucune candidatures spontanées à l'heure actuelle.</p>
     <% end %>
   </div>
 </div>
