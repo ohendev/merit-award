@@ -37,11 +37,11 @@
 @media (min-width: 100px) and (max-width: 575px) {
   .footer {
     background: $merit-green;
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 70px;
-    padding: 0px 50px;
+    padding: 50px;
     width: 100%;
     color: black;
     position: fixed;
@@ -52,23 +52,19 @@
   .footer-links {
     display: flex;
     align-items: center;
+    margin-top: 10px;
   }
   .footer-links a {
     color: black;
     opacity: 0.15;
     text-decoration: none;
     font-size: 14px;
-    padding: 0px 10px;
   }
   .footer-links a:hover {
     opacity: 1;
   }
   .footer .fa-heart {
     color: #D23333;
-  }
-
-  .footer-margin {
-    margin-bottom: 90px;
   }
   .footer .copyright p{
     font-size: 10px;
