@@ -1,8 +1,9 @@
 <div class="cards">
-  <% @companies.each do |company| %>
-  <% if company.image_url %>
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%=image_path(company.image_url)%>)">
+  <% @companies.each_with_index do |company, index| %>
+    <% if company.image_url %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%=image_path(company.image_url)%>)">
     <% end %>
+    <div class="position"><%= index + 1 %></div>
     <%= link_to company.name, company_path(company.id), class: 'card-link' %>
     <p>Avis : <%= company.reviews.size %></p>
   </div>
