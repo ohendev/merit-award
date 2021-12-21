@@ -1,6 +1,6 @@
 class ApplicationsController < ApplicationController
-  before_action :find_company
-
+  before_action :find_company, only: [:new, :create]
+  skip_after_action :verify_authorized, :verify_policy_scoped
   def index
     @applications = Application.where(user: current_user)
   end
@@ -15,7 +15,7 @@ class ApplicationsController < ApplicationController
     @application.user = current_user
     @application.company = @company
     if @application.save
-      redirect_to company_applications_path(@company.id)
+      redirect_to applications_path
     else
       render :new
     end

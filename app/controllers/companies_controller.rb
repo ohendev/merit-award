@@ -1,7 +1,7 @@
 class CompaniesController < ApplicationController
 
   def index
-    @companies = Company.all.sort { |a, b| company_stars(b) <=> company_stars(a) }
+    @companies = policy_scope(Company).sort { |a, b| company_stars(b) <=> company_stars(a) }
 
     @markers = Company.geocoded.map do |company|
       {
@@ -10,12 +10,14 @@ class CompaniesController < ApplicationController
         info_window: render_to_string(partial: "info_window", locals: { company: company }),
         image_url: helpers.asset_url('logo.png')
       }
+
     end
   end
 
   def show
     @company = Company.find(params[:id])
     @stars = company_stars(@company)
+    authorize @company
   end
 
   private

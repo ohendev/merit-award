@@ -6,7 +6,12 @@
        <div class="application">
           <h2><%= application.company.name %></h2>
           <h3><%= application.role %></h3>
-          <p>Postulé le : <%= application.created_at %></p>
+          <div class="application-data">
+            <span>Postulé le : <%= application.created_at %></span>
+            <%= link_to cl_image_path(application.cv_attachment.key, format: :jpg ), target: "_blank" do %>
+              <i class="far fa-file-pdf"></i>
+            <% end %>
+          </div>
        </div>
     <% end %>
   </div>

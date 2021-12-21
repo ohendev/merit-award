@@ -6,6 +6,7 @@ gem 'geocoder'
 #gem for storing external resources
 gem 'cloudinary', '~> 1.16.0'
 
+gem 'pundit'
 ruby '2.7.4'
 # gem for devise creation
 gem 'devise'

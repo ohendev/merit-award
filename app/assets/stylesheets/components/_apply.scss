@@ -14,8 +14,28 @@
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  h2 {
+    color: dimgray;
+  }
+  h3 {
+    color: crimson;
+  }
   p {
     margin-left: 0;
     padding-left: 0;
+  }
+}
+
+.application-data {
+  span {
+    color: $merit-green;
+  }
+  a {
+    color: dimgray;
+    margin-left: 10px;
+    font-size: 30px;
+    &:hover {
+      color: crimson;
+    }
   }
 }
