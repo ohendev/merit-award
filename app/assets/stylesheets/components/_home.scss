@@ -2,11 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-   div img {
+  div img {
     width: 200px;
     height: 200px;
     object-fit: cover;
     border-radius: 5px;
+    border: 2px solid $merit-green;
     margin: 10px;
   }
 }
