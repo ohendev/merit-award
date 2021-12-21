@@ -20,6 +20,7 @@ class ReviewsController < ApplicationController
 
   def destroy
     @review = Review.find(params[:id])
+    authorize @review
     if @review.destroy
       redirect_to company_path(@review.company)
     end
