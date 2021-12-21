@@ -33,3 +33,244 @@
 .footer-margin {
   margin-bottom: 90px;
 }
+
+@media (min-width: 100px) and (max-width: 575px) {
+  .footer {
+    background: $merit-green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0px 50px;
+    width: 100%;
+    color: black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+  }
+  .footer-links {
+    display: flex;
+    align-items: center;
+  }
+  .footer-links a {
+    color: black;
+    opacity: 0.15;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0px 10px;
+  }
+  .footer-links a:hover {
+    opacity: 1;
+  }
+  .footer .fa-heart {
+    color: #D23333;
+  }
+
+  .footer-margin {
+    margin-bottom: 90px;
+  }
+  .footer .copyright p{
+    font-size: 10px;
+    color: black;
+    display: block;
+    margin: 10px;
+
+  }
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+.footer {
+  background: $merit-green;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0px 50px;
+  width: 100%;
+  color: black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: black;
+  opacity: 0.15;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 1;
+}
+.footer .fa-heart {
+  color: #D23333;
+}
+
+.footer-margin {
+  margin-bottom: 90px;
+}
+.footer .copyright p{
+    font-size: 14px;
+    color: black;
+    display: block;
+   margin: 10px;
+
+  }
+}
+
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .footer {
+    background: $merit-green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0px 50px;
+    width: 100%;
+    color: black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+  }
+  .footer-links {
+    display: flex;
+    align-items: center;
+  }
+  .footer-links a {
+    color: black;
+    opacity: 0.15;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 0px 10px;
+  }
+  .footer-links a:hover {
+    opacity: 1;
+  }
+  .footer .fa-heart {
+    color: #D23333;
+  }
+  .footer .copyright p{
+    font-size: 14px;
+    color: black;
+    display: block;
+   margin: 10px;
+
+  }
+}
+.footer-margin {
+  margin-bottom: 90px;
+}
+  .footer .copyright p{
+    font-size: 14px;
+    color: black;
+    display: block;
+   margin: 10px;
+
+  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .footer {
+    background: $merit-green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0px 50px;
+    width: 100%;
+    color: black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+  }
+  .footer-links {
+    display: flex;
+    align-items: center;
+  }
+  .footer-links a {
+    color: black;
+    opacity: 0.15;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 0px 10px;
+  }
+  .footer-links a:hover {
+    opacity: 1;
+  }
+  .footer .fa-heart {
+    color: #D23333;
+  }
+
+  .footer-margin {
+    margin-bottom: 90px;
+  }
+  .footer .copyright p{
+    font-size: 14px;
+    color: black;
+    display: block;
+   margin: 10px;
+
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .footer {
+    background: $merit-green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0px 50px;
+    width: 100%;
+    color: black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+  }
+  .footer-links {
+    display: flex;
+    align-items: center;
+  }
+  .footer-links a {
+    color: black;
+    opacity: 0.15;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 0px 10px;
+  }
+  .footer-links a:hover {
+    opacity: 1;
+  }
+  .footer .fa-heart {
+    color: #D23333;
+  }
+
+  .footer-margin {
+    margin-bottom: 90px;
+  }
+
+  .footer .copyright p{
+      font-size: 20px;
+      color: black;
+      display: block;
+    margin: 10px;
+
+  }
+}
+
+.empty {
+  width: 20%;
+}

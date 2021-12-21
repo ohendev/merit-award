@@ -1,12 +1,30 @@
+<div class="formpostuler">
 <%= simple_form_for([company, application]) do |f| %>
-  <%= f.label :first_name %>
-  <%= f.text_field :first_name, class: 'form-control' %>
-  <%= f.label :last_name %>
-  <%= f.text_field :last_name, class: 'form-control' %>
-  <%= f.label :role %>
-  <%= f.text_field :role, class: 'form-control' %>
-  <%= f.label :letter %>
-  <%= f.text_area :letter, class: 'form-control' %>
-  <%= f.input :cv, as: :file %>
-  <%= f.submit 'Envoyer ma candidature' %>
+  <div>
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name, class: 'form-control' %>
+  </div>
+
+  <div>
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name, class: 'form-control' %>
+  </div>
+
+  <div>
+    <%= f.label :role %>
+    <%= f.text_field :role, class: 'form-control' %>
+  </div>
+
+  <div>
+    <%= f.label :letter %>
+    <%= f.text_area :letter, class: 'form-control' %>
+  </div>
+  <div>
+    <%= f.input :cv, as: :file %>
+  </div>
+
+  <div>
+  <%= f.submit 'Envoyer ma candidature',class:"btn btn-success" %>
+</div>
 <% end %>
+</div>
