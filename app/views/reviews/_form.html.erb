@@ -1,9 +1,22 @@
+<div class="formavis">
 <%= simple_form_for([company, review]) do |f| %>
-  <%= f.label :topic %>
-  <%= f.text_field :topic, class: 'form-control' %>
-  <%= f.label :comment %>
-  <%= f.text_area :comment, class: 'form-control' %>
-  <%= f.label :stars %>
-  <%= f.number_field :stars, in: 0..5, class: 'form-control' %>
-  <%= f.submit 'Créer un avis' %>
+  <div>
+    <%= f.label :topic %>
+    <%= f.text_field :topic, class: 'form-control' %>
+  </div>
+
+  <div>
+    <%= f.label :comment %>
+    <%= f.text_area :comment, class: 'form-control' %>
+  </div>
+
+  <div>
+    <%= f.label :stars %>
+    <%= f.number_field :stars, in: 0..5, class: 'form-control' %>
+  </div>
+  
+<div class="button">
+  <%= f.submit 'Créer un avis',class:"btn btn-success" %>
+</div>
 <% end %>
+</div>
