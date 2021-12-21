@@ -39,3 +39,30 @@
     }
   }
 }
+
+.avatar-container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  h1 {
+    color: black;
+  }
+  h2 {
+    font-weight: 300;
+    color: $merit-green;
+  }
+}
+
+.avatar-image {
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 45px;
+  border: 5px solid $merit-green;
+}
+
+#zero {
+  color: crimson;
+  font-size: 20px;
+  font-weight: 300;
+}
